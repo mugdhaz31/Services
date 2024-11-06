@@ -1,4 +1,4 @@
-Implemented service section with responsiveness
+Implemented service section with responsiveness :
 
 ![Screenshot 2024-11-06 193432](https://github.com/user-attachments/assets/dcc32921-6de4-4607-bb89-0810b22ff005)
 
