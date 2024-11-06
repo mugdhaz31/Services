@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        @layer base {
+            body {
+                font-family: 'Poppins', sans-serif;
+            }
+        }
+
+        @layer utilities {
+            .bg-diagonal-gradient {
+                background: linear-gradient(135deg, #261863 70%, #EBEEF5 50%);
+            }
+        }
+
+        .text-custom-purple {
+            color: #281093;
+        }
+
+        .rotate-on-hover {
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .icon-circle {
+            border: 5px solid #261863;
+            background-color: white;
+            width: 60px;
+            height: 60px;
+            transition: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen">
+    <div id="assignment" class="w-full max-w-6xl p-6 bg-diagonal-gradient">
+        <h1 class="text-3xl font-bold text-left mb-6 text-white">Our Services</h1>
+        <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+            <!-- Card 1 -->
+            <div class="relative bg-white p-6 h-60 rounded-sm shadow-lg rotate-on-hover text-center service-card">
+                <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 icon-circle rounded-full p-3 shadow-lg">
+                    <i class="fas fa-wrench text-2xl text-blue-900"></i>
+                </div>
+                <h2 class="text-l font-semibold mt-6 mb-2">Emergency Plumbing Service</h2>
+                <p class="text-gray-600 text-xs mb-4">Our plumbers are ready to go 24/7 for emergencies - including nights, weekends and holidays.</p>
+                <a href="#" class="text-custom-purple text-m font-semibold p-1">EXPLORE THIS SERVICE ></a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="relative bg-white p-6 h-60 rounded-sm shadow-lg rotate-on-hover text-center service-card">
+                <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 icon-circle rounded-full p-3 shadow-lg">
+                    <i class="fas fa-tools text-2xl text-blue-900"></i>
+                </div>
+                <h2 class="text-l font-semibold mt-6 mb-2">Plumbing and Drains</h2>
+                <p class="text-gray-600 text-xs mb-4">As the largest plumbing and drain service company, we make thousands of repairs every day.</p>
+                <a href="#" class="text-custom-purple text-m font-semibold p-1">EXPLORE THIS SERVICE ></a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="relative bg-white p-6 h-60 rounded-sm shadow-lg rotate-on-hover text-center service-card">
+                <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 icon-circle rounded-full p-3 shadow-lg">
+                    <i class="fas fa-tint fa-2x text-blue-900"></i>
+                </div>
+                <h2 class="text-l font-semibold mt-6 mb-2">Water Damage</h2>
+                <p class="text-gray-600 text-xs mb-4">Our teams are equipped with state-of-the-art water extraction and cleanup equipment.</p>
+                <a href="#" class="text-custom-purple text-m font-semibold p-1">EXPLORE THIS SERVICE ></a>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="relative bg-white p-6 h-60 rounded-sm shadow-lg rotate-on-hover text-center service-card">
+                <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 icon-circle rounded-full p-3 shadow-lg">
+                    <i class="fas fa-fire fa-2x text-blue-900"></i>
+                </div>
+                <h2 class="text-l font-semibold mt-6 mb-2">Water Heaters</h2>
+                <p class="text-gray-600 text-xs mb-4">Trust Roto-Rooter for repair and replacement of gas, electric, and tankless water heaters.</p>
+                <a href="#" class="text-custom-purple text-m font-semibold p-1">EXPLORE THIS SERVICE ></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('.service-card').hover(
+                function () {
+                    $(this).css({ transform: 'rotate(360deg)' });
+                },
+                function () {
+                    $(this).css({ transform: 'rotate(0deg)' });
+                }
+            );
+        });
+    </script>
+</body>
+</html>
